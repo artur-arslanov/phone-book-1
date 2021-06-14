@@ -1,0 +1,255 @@
+/*
+Date of creation: 19.09.2020
+Version: 1.0
+Description: None
+*/
+
+
+/* CSS reset */
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS reset end */
+
+
+/* Common setup */
+
+body {
+    background-color: #171A21;
+    width: 1000px;
+    height: 595px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* End commond setup */
+
+
+/* Sidebar */
+
+.sidebar {
+    background-color: #617073;
+    width: 160px;
+    height: 595px;
+    position: fixed;
+    font-size: 24px;
+}
+
+/* Sidebar buttons */
+
+.sidebar div {
+    width: 160px;
+    height: 80px;
+    position: relative;
+}
+
+.sidebar div:hover {
+    background-color: #7A93AC;
+    cursor: pointer;
+}
+
+.sidebar div img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.sidebar div span {
+    position: absolute;
+    left: 45px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+/* Sidebar end*/
+
+
+/* Main setup */
+
+.main {
+    position: relative;
+    left: 160px;
+    display: flex;
+    flex-direction: column;
+    width: 840px;
+}
+
+/* header */
+
+.header {
+    position: relative;
+    width: 840px;
+    height: 70px;
+}
+
+.header span {
+    color: #FF4532;
+    position: absolute;
+    left: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    
+}
+
+/* block actions */
+
+.block_actions {
+    width: 840px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+}
+
+.block_actions button {
+    background-color: #7A93AC;
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 18px;
+    width: 144px;
+    height: 42px;
+    border-radius: 10px;
+    margin-right: 88px;
+    border: 1px solid  #171A21;
+}
+
+/* block actions end */
+
+/* table */
+
+.table {
+    width: 840px;
+    font-size: 18px;
+    color: #FF4532;
+    border-radius: 10px;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+.table tr {
+    width: 840px;
+    height: 59px;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.table th, td {
+    width: 130px;
+    height: 59px;
+    overflow: auto;
+    border: 1px solid #7A93AC;
+    text-align: center;
+    vertical-align: baseline;
+
+}
+
+.delete {
+    width: 59px !important;
+    height: 59px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* table end */
+
+/* add_edit_window */
+
+#edit_description, #add_note {
+    width: 572px;
+    height: 449px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+.add_edit_window {
+    position: fixed;
+    background-color: #617073;
+    width: 615px;
+    height: 595px;
+    border-radius: 10px;
+    left: 192px;
+    top: 0px;
+}
+
+.add_edit_window_header {
+    width: 615px;
+    height: 61px;
+    position: relative;
+}
+
+.add_edit_window_header span {
+    font-size: 36px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.input_block_add_edit {
+    width: 551px;
+    height: 449px;
+    padding-left: 21px;
+}
+
+.input_block_add_edit div {
+    display: flex;
+    font-size: 36px;
+    width: 534px;
+    height: 74px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 38px;
+}
+
+.input_block_add_edit input {
+    font-size: 36px;
+    width: 284px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px solid  #7A93AC;
+}
+
+.button_block_add_edit {
+    display: flex;
+    padding: 0 33px 0 33px;
+    justify-content: space-between;
+}
+
+.button_block_add_edit button {
+    width: 240px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 36px;
+    font-family: Inter;
+    font-weight: bold;
+    background-color: #7A93AC;
+    border: 1px solid #7A93AC;
+}
+
+#save:hover {
+    background-color: green;
+}
+
+#close:hover{
+    background-color: red;
+}
+
+/* add_edit_window end*/
+
+
+
+
+
+/* Main end */
